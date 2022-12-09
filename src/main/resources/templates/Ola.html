@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#33b5e5">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+ 
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+    
+
+    <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
+
+    
+    <meta charset="utf-8">
+    <title>GeoCabs</title>
+    <link rel="icon" href="/images/cab3.jpg" type="image/jpg">
+     
+    <style>
+     #pills-login{
+	
+	padding-bottom : 50rem;
+}
+ #formOne,#one,#signin{
+	transition: transform .5s;
+}
+ #one:hover,#signin:hover{
+	transform : scale(1.1);
+} 
+
+    
+    </style>
+   
+<style>
+</style>
+
+
+ <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
+ <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDibIoUenWl9FBwUX6xmUQeUotsOsT__uI&callback=initMap">
+</script>
+ <script type="text/javascript" src="js/map.js"></script>
+ <script>
+ 
+ function one(){
+	var form = document.getElementById("placename");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+}
+ </script>
+<style>
+@import url("./Indie_Flower/IndieFlower-Regular.ttf");
+#hey{
+	font-family:Indie Flower;
+	color:white;
+    font-size:5rem;
+    margin-left:30rem;
+    
+}
+#he{
+	font-family:Indie Flower;
+    font-size:8rem;
+    margin-left: 32rem;
+    margin-top:-3rem}
+ #home{
+	transition: transform .5s;
+}
+ #home:hover{
+	transform : scale(1.1);
+} 
+</style>
+</head>
+ 
+ <body style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/cab1.jpg') ;height: 100%;
+background-position:center;
+background-repeat: no-repeat;
+background-size:cover;
+overflow: hidden;">
+    
+    <div style="width:20rem; margin-top:0.5rem;">
+    <form method="POST" th:action="@{/logout}">
+    <!-- 
+	Logout Page
+-->
+    <button type="submit" id="signin" value="Logout" class="btn btn-primary btn-block mb-4" style="width: 30%;margin-left:1rem">Logout</button>
+    
+    </form>
+    </div >
+    
+    <div id="home">
+    <a href="maps" >
+    <h1 id="hey">geo</h1 >
+    <h1 id="he" style="color:yellow">Cabs</h1 >
+    </a>
+    </div>
+   <!-- 
+	Select Places Page
+-->
+ <div style="width:30rem; padding-bottom : 10px;margin-top:8rem;margin-left:25rem" id="formOne">
+   <form method="POST" th:object="${add}" id="placename" th:action="@{/getOla/bookOla}" onsubmit="return(one());">
+   
+    <div class="form-outline mb-4" style="width: 60%;margin : auto" id="one">
+   
+    <select  class="form-select selectpicker dropup" data-dropup-auto="true" th:field="*{PicAdd}">
+    
+    <option th:each="i : ${places}" th:value="${i.place}" th:text="${i.place}">
+    </span>
+    </select >
+    </div>
+    
+    <div class="form-outline mb-4" style="width: 60%;margin : auto" id="one">
+   
+    
+     
+     <select  class="form-select selectpicker dropdown" th:field="*{DesAdd}">
+    <option th:each="i : ${places1}" th:value="${i.place}" th:text="${i.place}">
+    </option>
+    </span>
+    </select >
+    </div>
+    
+
+    <button type="submit" id="signin" class="btn btn-primary btn-block mb-4" style="width: 30%;margin : auto; margin-top:20px">GO</button>
+    <div style="height:10rem">
+    </div >
+    </form>
+ </div>
+    
+    
+    
+ </body >
+
+</html>
