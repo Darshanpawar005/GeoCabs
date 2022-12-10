@@ -30,8 +30,7 @@ Refer following articles written by me for tech-stack understanding :
  - https://www.geeksforgeeks.org/spring-boot-packaging/
 
 Login
-
-![1](https://user-images.githubusercontent.com/78448585/206842749-7a94e78d-031e-43a0-969e-b46e236e11ac.JPG)
+-![1](https://user-images.githubusercontent.com/78448585/206842749-7a94e78d-031e-43a0-969e-b46e236e11ac.JPG)
 
 Registration
 ![3](https://user-images.githubusercontent.com/78448585/206842744-4607e7ca-8b51-4fdb-9082-5b380a6f8f49.JPG)
