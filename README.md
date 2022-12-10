@@ -28,25 +28,27 @@ Refer following articles written by me for tech-stack understanding :
  - https://www.geeksforgeeks.org/spring-boot-how-thymeleaf-works/
  - https://www.geeksforgeeks.org/spring-boot-jdbc/
  - https://www.geeksforgeeks.org/spring-boot-packaging/
+ 
+Project Overview :
 
-Login
+ - Login
 
 ![1](https://user-images.githubusercontent.com/78448585/206842749-7a94e78d-031e-43a0-969e-b46e236e11ac.JPG)
 
-Registration
+ - Registration
 
 ![3](https://user-images.githubusercontent.com/78448585/206842744-4607e7ca-8b51-4fdb-9082-5b380a6f8f49.JPG)
 
-Validation
+ - Validation
 
 ![2](https://user-images.githubusercontent.com/78448585/206842805-be0e7f2c-90a1-416f-a008-49ab5f38713f.JPG)
 ![4](https://user-images.githubusercontent.com/78448585/206842813-c1cee8bf-0b64-4989-bbe2-d60417522a84.JPG)
 
-User Database
+ - User Database
 
 ![5](https://user-images.githubusercontent.com/78448585/206842830-c70772a9-f3b1-4ee7-8dbb-f3a781c7ac63.JPG)
 
-Page-1/Page-2 (Save dynamic locations respectively)
+ - Page-1/Page-2 (Save dynamic locations respectively)
 - Current Location
 ![6](https://user-images.githubusercontent.com/78448585/206842877-a39cb4d8-d543-442d-8855-12324af97c14.JPG)
 
@@ -59,14 +61,14 @@ Page-1/Page-2 (Save dynamic locations respectively)
 - Clicked Location
 ![10](https://user-images.githubusercontent.com/78448585/206842954-3246b4a2-1219-4ddf-a61a-1768ee4f3a25.JPG)
 
-Saved Location Co-Ordinates in Database
+ - Saved Location Co-Ordinates in Database
 ![7](https://user-images.githubusercontent.com/78448585/206843152-f9331f14-e3f8-42e9-b17a-a18fd52d01d0.JPG)
 
-Pick/Drop Location Selection
+ - Pick/Drop Location Selection
 
 ![11](https://user-images.githubusercontent.com/78448585/206843044-e2297f21-db43-4080-beeb-4371b2d4b4ad.JPG)
 ![12](https://user-images.githubusercontent.com/78448585/206843053-b1f218e9-e5a4-485d-aa68-521da854176c.JPG)
 
-Location Co-ordinates used by official Ola Application
+ - Location Co-ordinates used by official Ola Application
 
 ![13](https://user-images.githubusercontent.com/78448585/206843107-881e5715-cfb3-48ce-b0d6-d3b4be28211e.JPG)
